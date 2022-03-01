@@ -33,7 +33,7 @@ from timm.scheduler import create_scheduler
 from timm.utils import ApexScaler, NativeScaler
 
 import warnings
-from misc import init_distributed_mode
+from misc import init_distributed_mode, is_main_process
 
 warnings.filterwarnings('ignore')
 

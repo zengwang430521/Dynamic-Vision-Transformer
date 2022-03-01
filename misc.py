@@ -446,6 +446,7 @@ def init_distributed_mode(args):
         args.world_size = ntasks
         args.rank = proc_id
         args.gpu = proc_id % num_gpus
+        args.local_rank = args.gpu
     else:
         print('Not using distributed mode')
         args.distributed = False
